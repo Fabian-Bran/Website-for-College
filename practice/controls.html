@@ -6,6 +6,11 @@
     <title>Controls</title>
   </head>
   <body>
+    <header>
+      <p><strong>Northfield Surgery Form</strong></p>
+      </nav>
+    </header>
+    <h1>Booking</h1>
     <form method="post" id="booking-form">
       <label for="name">Name</label>
       <input id="name" type="text" , required />
@@ -18,9 +23,10 @@
 
       <label for="dob">Date Of Birth</label>
       <input id="dob" type="date" max="" />
+
       <script>
         document.getElementById("dob").setAttribute("max", new Date().toISOString().split('T')[0])
-        </script>
+      </script>
 
       <label for="nhs">NHS Number</label>
       <input id="nhs" type="number" maxlength="10" />
@@ -32,7 +38,7 @@
         <legend>What type of appointment?</legend>
 
         <input type="radio" id="gp" name="appt_type" value="gp" />
-        <label for="gp">GP appointment</label>
+        <label for="gp">fieldsetGP appointment</label>
 
         <input type="radio" id="nurse" name="appt_type" value="nurse" />
         <label for="nurse">Nurse clinic</label>
@@ -79,8 +85,17 @@
       
       <input type="hidden" value="web">
 
-      <button type="submit"></button>
-      <button type="reset"></button>
+      <button type="submit" >SUBMIT</button>
+      <button type="reset" >RESET</button>
     </form>
+
+    <footer>
+      <p>Northfield Surgery, 14 Northfield Road, Plymouth PL4 0AB</p>
+      <p>Telephone: <a href="tel:01752000000">01752 000000</a></p>
+      <p>
+        This is a fictional practice built as a student project. No real patient
+        data is used.
+      </p>
+    </footer>
   </body>
 </html>
