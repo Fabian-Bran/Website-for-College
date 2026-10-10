@@ -1,0 +1,157 @@
+:root {
+  /* Colour */
+  --brand:        #14504f;
+  --brand-dark:   #0d3837;
+  --brand-light:  #e7f0ef;
+  --accent:       #b0543c;
+  --accent-dark:  #8f4330;
+ 
+  --paper:        #fbfaf7;
+  --surface:      #ffffff;
+  --surface-sunk: #f4f2ed;
+  --line:         #ddd8ce;
+ 
+  --ink:          #22201d;
+  --ink-soft:     #5e5951;
+  --ink-faint:    #8b857b;
+ 
+  /* Type */
+  --font-head: "Source Serif 4", Georgia, serif;
+  --font-body: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+ 
+  /* A modular scale, ratio 1.25 */
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.375rem;
+  --text-2xl:  1.75rem;
+  --text-3xl:  2.25rem;
+  --text-4xl:  3rem;
+ 
+  /* Space - an 8px base */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4.5rem;
+ 
+  --radius: 8px;
+  --container: 1140px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+ 
+h1, h2, h3, h4 {
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.2;
+}
+h1 {
+    font-size: var(--text-xxl);
+}
+h2 {
+    font-size: var(--text-xl);
+}
+h3 {
+    font-size: var(--text-lg);
+}
+h4 {
+    font-size: var(--text-md);
+}
+p {
+    max-width: 68ch;
+}
+
+a {
+  text-decoration-line: underline;
+  text-decoration-color: var(--brand);
+  text-underline-offset: 3px;
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+}
+ 
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+header {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: var(--space-2);
+}
+
+img, picture, svg {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+ 
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+ 
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.lead {
+    font-size: var(--text-lg);
+    color: var(--ink-soft);
+}
+
+.container {
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: var(--space-2);
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.nav__link:hover {
+  color: var(--brand);
+}
+
+.nav__link[aria-current="page"] {
+  font-weight: bold;
+  color: var(--brand);
+}
