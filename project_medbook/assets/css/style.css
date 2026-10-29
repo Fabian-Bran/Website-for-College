@@ -215,7 +215,7 @@ input, button, textarea, select {
 
 .card {
   background: var(--surface);
-  border: 1p solid var(--line);
+  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: var(--space-3);
 
@@ -223,7 +223,7 @@ input, button, textarea, select {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card__link::hover {
+.card__link:hover {
     box-shadow: 6px 21px;
   transform: translateY(-2px);
 }
