@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container site-header__inner">
         <p><strong>Northfield Surgery</strong></p>
 
         <nav>
@@ -53,16 +53,34 @@
     <main>
       <!-- Page content goes here -->
 
-      <h1>Welcome to Northfield Surgery</h1>
-      <section>
-        <h2>Introduction</h2>
-        <p>This is the home page for the surgery.</p>
+      <section class="hero">
+        <div>
+          <h1>Welcome to Northfield Surgery</h1>
 
+          <h2>Introduction</h2>
+          <p>This is the home page for the surgery.</p>
+        </div>
+
+        <div>
+          <h2>Opening hours</h2>
+          <dl>
+            <dt>Monday</dt>
+            <dd>8:00am to 4:30pm</dd>
+
+            <dt>Tuesday-Friday</dt>
+            <dd>8:00am to 6:30pm</dd>
+
+            <dt>Weekends</dt>
+            <dd>Closed</dd>
+          </dl>
+        </div>
+      </section>
+      <section>
         <video
           controls
           width="640"
           height="360"
-          poster="/project_medbook/assets/img/images.jfif"
+          poster="assets/img/images.jfif"
         >
           <source src="https://test-videos.co.uk" type="video/mp4" />
 
@@ -98,19 +116,7 @@
         </ol>
       </section>
 
-      <section>
-        <h2>Opening hours</h2>
-        <dl>
-          <dt>Monday</dt>
-          <dd>8:00am to 4:30pm</dd>
-
-          <dt>Tuesday-Friday</dt>
-          <dd>8:00am to 6:30pm</dd>
-
-          <dt>Weekends</dt>
-          <dd>Closed</dd>
-        </dl>
-      </section>
+      <section></section>
 
       <section>
         <h2>Urgent help</h2>

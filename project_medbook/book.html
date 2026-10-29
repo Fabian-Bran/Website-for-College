@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container site-header__inner">
         <p><strong>Northfield Surgery</strong></p>
 
         <nav>
@@ -144,18 +144,27 @@
             
             <legend>What time for appointment?</legend>
             
-            <input type="radio" id="09:00" name="time" value="09:00" required />
-            <label for="09:00">09:00</label>
+            <div class slots>
+            <div class="slot">
+              <input type="radio" id="09:00" name="time" value="09:00" required />
+              <label class="slot__label" for="09:00">09:00</label>
+            </div>
 
-            <input type="radio" id="11:30" name="time" value="11:30" />
-            <label for="11:30">11:30</label>
+            <div class="slot">
+              <input type="radio" id="11:30" name="time" value="11:30" />
+              <label class="slot__label" for="11:30">11:30</label>
+            </div>
 
-            <input type="radio" id="14:00" name="time" value="14:00" />
-            <label for="14:00">14:00</label>
+            <div class="slot">
+              <input type="radio" id="14:00" name="time" value="14:00" />
+              <label class="slot__label" for="14:00">14:00</label>
+            </div>
 
-            <input type="radio" id="16:30" name="time" value="16:30" />
-            <label for="16:30">16:30</label>
-
+            <div class="slot">
+              <input type="radio" id="16:30" name="time" value="16:30" />
+              <label class="slot__label" for="16:30">16:30</label>
+            </div>
+            </div>
             <p class="field__error" id="preferred-time-error"></p>
           </fieldset></div>
           
